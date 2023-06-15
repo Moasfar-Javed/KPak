@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/confPasswordTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter description"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="18dp"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:maxLines="10"
+            />
+        <RadioGroup
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp">
+
+
+
+
+
+
+                <RadioButton
+                    android:id="@+id/busRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crime" />
+
+
+                <RadioButton
+                    android:id="@+id/trainRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambulance" />
+
+                <RadioButton
+                    android:id="@+id/disasterRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fire" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/findBtn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="SEND DISTRESS SIGNAL"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/warningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="25dp"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="The authorities will arrive shortly after you send out\n a distress signal"
+            android:textSize="13sp" />
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
